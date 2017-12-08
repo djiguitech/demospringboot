@@ -1,5 +1,5 @@
-# demospringboot
-Demo Spring Boot Thymeleaf  JPA  One To Many
+# demospringboot  
+Demo Spring Boot ThymeLeaf  JPA One To Many  / HTML Select Option
 
 Run Project :
 mvn clean install spring-boot:run
