@@ -20,9 +20,9 @@ public class Genre implements Serializable  {
 	private String  code;
 	private String  description;
 
-	/*@ManyToOne
+	@ManyToOne
 	@JoinColumn(name="livre_id")
-	private Livre livre;*/
+	private Livre livre;
 
 	public Genre() {
 	
@@ -38,15 +38,6 @@ public class Genre implements Serializable  {
 	}
 
 
-
-
-
-	
-	
-	
-	
-
-/*
 	public Livre getLivre() {
 		return livre;
 	}
@@ -55,7 +46,7 @@ public class Genre implements Serializable  {
 
 	public void setLivre(Livre livre) {
 		this.livre = livre;
-	}*/
+	}
 
 
 
