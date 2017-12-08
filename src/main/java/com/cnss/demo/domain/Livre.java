@@ -22,7 +22,7 @@ public class Livre implements Serializable {
 	
 
 	
-	@OneToMany(mappedBy = "livre",cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL)
 	private List<Genre> genres;
 
 	
