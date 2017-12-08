@@ -50,12 +50,15 @@ public class LivreController {
 	
 	private Livre convertLivreFormToLivre(LivreForm livreForm) {
 		List<Genre> genres = new ArrayList<Genre>();
+		Livre livre = new Livre(livreForm.getTitre());
+		
 		for(String genreCode: livreForm.getTabGenres()) {
 			Genre genre = GenreServiceHelper.findOne(genreCode);
+		    genre.setLivre(livre);
 			genres.add(genre);
 		}
-		Livre livre= new Livre(livreForm.getTitre(),genres);
 		
+		livre.setGenres(genres);
 		return livre;
 	}
 
